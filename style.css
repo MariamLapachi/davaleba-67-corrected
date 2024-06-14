@@ -124,7 +124,7 @@ input[type="email"]::placeholder {
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .box {
         width: 90%;
         left: 50%;
