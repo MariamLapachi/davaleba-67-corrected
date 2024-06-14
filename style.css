@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 10px;
+}
+
+img {
+    width: 469px;
+    height: auto; /* Adjusted height */
+}
+
+.box {
+    width: 340px;
+    height: 372px;
+    left: 1000px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #FFFFFF;
+}
+
+
+.box-firstchild {
+    width: 340px;
+    height: 150px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0; /* Adjusted positioning */
+    text-align: left;
+}
+
+.signin {
+    width: 100%; /* Adjusted width */
+    background-image: url('24.png'), url('26.png');
+    background-size: 43px 43px, 43px 43px;
+    background-position: calc(100% - 0px) 50%, 5px 50%;
+    background-repeat: no-repeat; 
+    padding: 15px 35px 15px 55px;
+    background-color: #4285F4;
+    position: absolute;
+    top: 80px; /* Adjusted positioning */
+    border-radius: 4px;
+    border: #4285F4;
+    text-align: center;
+    color: white;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px 35px 20px 55px;
+    background-image: url(25.png);
+    background-size: 43px 43px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: 1px solid #E5E7EB;
+    top: 150px;
+    border-radius: 4px;
+}
+
+/* Add this CSS */
+input[type="email"]::placeholder {
+    color: #D1D5DB; /* Adjust placeholder color as needed */
+}
+
+
+.box div:nth-child(2) {
+    width: 340px;
+    height: 25px;
+    background-color: #E5E7EB;
+    padding: 12px 0; /* Corrected padding */
+    border: 1px solid black;
+    position: absolute;
+    top: 170px; /* Adjusted positioning */
+}
+
+.forgetpassword {
+    width: 340px; /* Adjusted width */
+    position: absolute;
+    top: 220px; /* Adjusted positioning */
+    text-align: left; /* Center the text */
+}
+
+.forgetpassword a {
+    color: #6D58BA; /* Link color */
+}
+
+.submit {
+    width: 100%; /* Adjusted width */
+    min-height: 48px;
+    padding: 10px 35px 10px 55px;
+    background-color: #724DFF;
+    border: 1px #724DFF;
+    position: absolute;
+    border-radius: 6px;
+    top: 250px; /* Adjusted positioning */
+    color: white;
+}
+
+.Support {
+    width: 340px; /* Adjusted width */
+    top: 310px; /* Adjusted positioning */
+    text-align: left; /* Center the text */
+    position: absolute;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #E5E7EB;
+    position: absolute;
+    top: 140px;
+}   
+
+.ptext {
+    color: #6B7280;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 480px) {
+    .box {
+        width: 95%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .line {
+        top: 130px;
+    }
+}
