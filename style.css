@@ -4,18 +4,19 @@
 }
 
 body {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 img {
     width: 469px;
     height: auto; /* Adjusted height */
+    margin-top: 0px;
 }
 
 .box {
     width: 340px;
     height: 372px;
-    left: 850px;
+    left: 1000px;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -59,11 +60,14 @@ input[type="email"] {
     border: 1px solid #E5E7EB;
     top: 150px;
     border-radius: 4px;
+    text-align: center;
 }
 
 /* Add this CSS */
 input[type="email"]::placeholder {
     color: #D1D5DB; /* Adjust placeholder color as needed */
+    text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -91,7 +95,7 @@ input[type="email"]::placeholder {
 .submit {
     width: 100%; /* Adjusted width */
     min-height: 48px;
-    padding: 10px 35px 10px 55px;
+    padding: 10px 35px 10px 35px;
     background-color: #724DFF;
     border: 1px #724DFF;
     position: absolute;
@@ -125,13 +129,45 @@ input[type="email"]::placeholder {
         width: 95%;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="submit"] {
-        width: 100%;
+    .box-firstchild {
+        width: 340px;
+        height: 150px;
+        margin-top: 10px;
+        position: absolute;
+        top: 0; /* Adjusted positioning */
+        text-align: center;
+    }
+
+    .submit {
+        width: 50%; /* Adjusted width */
+        min-height: 48px;
+        text-align: center;
+        padding: 10px 35px 10px 35px;
+        background-color: #724DFF;
+        border: 1px #724DFF;
+        position: absolute;
+        border-radius: 6px;
+        top: 250px; /* Adjusted positioning */
+        color: white;
+        left: 100px;
     }
 
     .line {
-        top: 130px;
+        display: none;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        padding: 10px 35px 20px 55px;
+        background-image: url(25.png);
+        background-size: 43px 43px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        position: absolute;
+        border: 1px solid #E5E7EB;
+        top: 150px;
+        border-radius: 4px;
+        text-align: center;
+        border-radius: 50px;
     }
 }
