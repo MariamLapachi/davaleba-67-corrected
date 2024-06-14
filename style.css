@@ -124,9 +124,11 @@ input[type="email"]::placeholder {
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .box {
-        width: 95%;
+        width: 90%;
+        left: 50%;
+        right: 50%;
     }
 
     .box-firstchild {
@@ -169,5 +171,9 @@ input[type="email"]::placeholder {
         border-radius: 4px;
         text-align: center;
         border-radius: 50px;
+    }
+
+    img {
+        display: none;
     }
 }
